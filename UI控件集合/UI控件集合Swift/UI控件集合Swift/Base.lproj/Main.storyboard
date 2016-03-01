@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UI控件集合Swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HMP-lH-9v7" customClass="BaseLineView" customModule="UI控件集合Swift" customModuleProvider="target">
+                                <rect key="frame" x="20" y="40" width="280" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="UN2-hd-uYA"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="lineWidth">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
+                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="directionV" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="37y-8L-mFA" customClass="BottomLineBtn" customModule="UI控件集合Swift" customModuleProvider="target">
+                                <rect key="frame" x="16" y="98" width="105" height="61"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="105" id="jQG-t5-6PX"/>
+                                    <constraint firstAttribute="height" constant="61" id="rOd-YE-QXs"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="bottomOffset">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
+                                        <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="lineWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="showPup:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gWe-bR-VoR"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zDY-Wf-QT9" customClass="BaseView" customModule="UI控件集合Swift" customModuleProvider="target">
+                                <rect key="frame" x="16" y="186" width="288" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="NZp-QS-sVA"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="w5X-1d-c0r" customClass="BaseTextView_PlaceHolder" customModule="UI控件集合Swift" customModuleProvider="target">
+                                <rect key="frame" x="26" y="302" width="268" height="155"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="155" id="TO0-7I-ldZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="placeHolder" value="买家留言"/>
+                                </userDefinedRuntimeAttributes>
+                            </textView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1yv-5f-vp1" customClass="BaseDashLineView" customModule="UI控件集合Swift" customModuleProvider="target">
+                                <rect key="frame" x="10" y="234" width="300" height="40"/>
+                                <color key="backgroundColor" red="0.90196078431372551" green="0.90196078431372551" blue="0.90196078431372551" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="YUW-TR-A7T"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="lineWidth">
+                                        <integer key="value" value="77"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
+                                        <color key="value" red="0.98431372549999996" green="0.22352941179999999" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="directionV" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showAtLeft" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showAtTop" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Ct-W3-3Kc">
+                                <rect key="frame" x="248" y="98" width="105" height="61"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="show2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5d4-di-xe7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0o8-TK-SkB" customClass="RoundButton" customModule="UI控件集合Swift" customModuleProvider="target">
+                                <rect key="frame" x="129" y="98" width="105" height="61"/>
+                                <color key="backgroundColor" red="0.69411764710000001" green="0.69411764710000001" blue="0.69411764710000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="61" id="53t-1i-LfG"/>
+                                    <constraint firstAttribute="width" constant="105" id="GPM-7s-dlS"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="bottomOffset">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
+                                        <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="lineWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="zYM-zV-xY6" kind="show" id="Hl1-0p-VFk"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90196078431372551" green="0.90196078431372551" blue="0.90196078431372551" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="w5X-1d-c0r" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="2o9-rz-dEi"/>
+                            <constraint firstItem="3Ct-W3-3Kc" firstAttribute="leading" secondItem="0o8-TK-SkB" secondAttribute="trailing" constant="14" id="4Qc-wi-P7i"/>
+                            <constraint firstItem="1yv-5f-vp1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="AUI-n5-7CI"/>
+                            <constraint firstItem="zDY-Wf-QT9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="B70-Ri-Z0t"/>
+                            <constraint firstItem="3Ct-W3-3Kc" firstAttribute="width" secondItem="0o8-TK-SkB" secondAttribute="width" id="Cru-YR-dWp"/>
+                            <constraint firstItem="0o8-TK-SkB" firstAttribute="centerY" secondItem="37y-8L-mFA" secondAttribute="centerY" id="Cz0-Hg-klX"/>
+                            <constraint firstItem="HMP-lH-9v7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="DbS-mI-Hw2"/>
+                            <constraint firstAttribute="trailing" secondItem="1yv-5f-vp1" secondAttribute="trailing" constant="10" id="JS1-k7-CBS"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="w5X-1d-c0r" secondAttribute="trailing" constant="10" id="PE2-Od-Pbb"/>
+                            <constraint firstAttribute="trailing" secondItem="zDY-Wf-QT9" secondAttribute="trailing" constant="16" id="PWc-y7-n2t"/>
+                            <constraint firstItem="3Ct-W3-3Kc" firstAttribute="top" secondItem="0o8-TK-SkB" secondAttribute="top" id="R5m-sJ-88N"/>
+                            <constraint firstItem="HMP-lH-9v7" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="Y7Y-Pd-S9E"/>
+                            <constraint firstItem="1yv-5f-vp1" firstAttribute="top" secondItem="zDY-Wf-QT9" secondAttribute="bottom" constant="8" id="a12-QY-LKU"/>
+                            <constraint firstItem="w5X-1d-c0r" firstAttribute="top" secondItem="1yv-5f-vp1" secondAttribute="bottom" constant="28" id="bTT-Pl-1Ud"/>
+                            <constraint firstItem="3Ct-W3-3Kc" firstAttribute="height" secondItem="0o8-TK-SkB" secondAttribute="height" id="c0o-De-2XB"/>
+                            <constraint firstItem="zDY-Wf-QT9" firstAttribute="top" secondItem="0o8-TK-SkB" secondAttribute="bottom" constant="27" id="cEH-8d-rfX"/>
+                            <constraint firstItem="37y-8L-mFA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="e1r-Yc-R7q"/>
+                            <constraint firstItem="0o8-TK-SkB" firstAttribute="leading" secondItem="37y-8L-mFA" secondAttribute="trailing" constant="8" id="i5n-du-YYR"/>
+                            <constraint firstAttribute="trailing" secondItem="HMP-lH-9v7" secondAttribute="trailing" constant="20" id="psr-ps-KCR"/>
+                            <constraint firstItem="37y-8L-mFA" firstAttribute="top" secondItem="HMP-lH-9v7" secondAttribute="bottom" constant="28" id="skn-2W-Iav"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="19" y="287"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="G31-xF-3C0">
+            <objects>
+                <viewController id="zYM-zV-xY6" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="E7Z-sK-MtF"/>
+                        <viewControllerLayoutGuide type="bottom" id="ebq-3m-BZC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4s0-7s-zaM">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AHQ-mZ-Gwj">
+                                <rect key="frame" x="78" y="20" width="51" height="31"/>
+                                <color key="onTintColor" red="0.18823529410000001" green="0.7843137255" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
+                            </switch>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yGK-S3-avZ" customClass="BaseSwitch" customModule="UI控件集合Swift" customModuleProvider="target">
+                                <rect key="frame" x="11" y="74" width="220" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="on" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="offColor">
+                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7l1-Oy-okX" customClass="BaseSwitch" customModule="UI控件集合Swift" customModuleProvider="target">
+                                <rect key="frame" x="11" y="122" width="220" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="offColor">
+                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4zv-MM-hbJ" customClass="HH_HorizontalAlignButton" customModule="UI控件集合Swift" customModuleProvider="target">
+                                <rect key="frame" x="18" y="229" width="284" height="40"/>
+                                <color key="backgroundColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="UE0-YY-j0I"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="31"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="4zv-MM-hbJ" secondAttribute="trailing" constant="2" id="1DF-jr-ZhK"/>
+                            <constraint firstItem="4zv-MM-hbJ" firstAttribute="leading" secondItem="4s0-7s-zaM" secondAttribute="leadingMargin" constant="2" id="LBx-mR-NzC"/>
+                            <constraint firstItem="4zv-MM-hbJ" firstAttribute="top" secondItem="E7Z-sK-MtF" secondAttribute="bottom" constant="209" id="eRA-GS-aqq"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hHM-pQ-rSu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="450" y="287"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="31" width="30" height="30"/>
+    </resources>
+</document>
