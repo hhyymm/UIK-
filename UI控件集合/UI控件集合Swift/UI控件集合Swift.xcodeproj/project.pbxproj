@@ -12,6 +12,7 @@
 		984323211C85451A0016F3B5 /* ShareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9843231F1C85451A0016F3B5 /* ShareView.swift */; };
 		984323221C85451A0016F3B5 /* ShareView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 984323201C85451A0016F3B5 /* ShareView.xib */; };
 		984323241C854B210016F3B5 /* SexView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 984323231C854B210016F3B5 /* SexView.xib */; };
+		9849141E1C85B7D9007BDC72 /* BaseActionSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9849141D1C85B7D9007BDC72 /* BaseActionSheet.swift */; };
 		989731D61C818E0C00C48929 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 989731D51C818E0C00C48929 /* main.m */; };
 		989731D91C818E0C00C48929 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 989731D81C818E0C00C48929 /* AppDelegate.m */; };
 		989731DC1C818E0C00C48929 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 989731DB1C818E0C00C48929 /* ViewController.m */; };
@@ -22,6 +23,7 @@
 		989731F51C818E4500C48929 /* FXBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = 989731EF1C818E4500C48929 /* FXBlurView.m */; };
 		989731F61C818E4500C48929 /* KlineData.txt in Resources */ = {isa = PBXBuildFile; fileRef = 989731F11C818E4500C48929 /* KlineData.txt */; };
 		989731F71C818E4500C48929 /* KlineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 989731F31C818E4500C48929 /* KlineView.m */; };
+		98E2EDEF1C92A30E0075EA9A /* VC2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E2EDEE1C92A30E0075EA9A /* VC2.swift */; };
 		98E8248E1C7FEC5400D95D6B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E8248D1C7FEC5400D95D6B /* AppDelegate.swift */; };
 		98E824901C7FEC5400D95D6B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E8248F1C7FEC5400D95D6B /* ViewController.swift */; };
 		98E824931C7FEC5400D95D6B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98E824911C7FEC5400D95D6B /* Main.storyboard */; };
@@ -73,6 +75,7 @@
 		9843231F1C85451A0016F3B5 /* ShareView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareView.swift; sourceTree = "<group>"; };
 		984323201C85451A0016F3B5 /* ShareView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShareView.xib; sourceTree = "<group>"; };
 		984323231C854B210016F3B5 /* SexView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SexView.xib; sourceTree = "<group>"; };
+		9849141D1C85B7D9007BDC72 /* BaseActionSheet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseActionSheet.swift; sourceTree = "<group>"; };
 		989731D21C818E0C00C48929 /* ObjC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		989731D51C818E0C00C48929 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		989731D71C818E0C00C48929 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -90,6 +93,7 @@
 		989731F11C818E4500C48929 /* KlineData.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = KlineData.txt; sourceTree = "<group>"; };
 		989731F21C818E4500C48929 /* KlineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KlineView.h; sourceTree = "<group>"; };
 		989731F31C818E4500C48929 /* KlineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KlineView.m; sourceTree = "<group>"; };
+		98E2EDEE1C92A30E0075EA9A /* VC2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VC2.swift; sourceTree = "<group>"; };
 		98E8248A1C7FEC5400D95D6B /* UI控件集合Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UI控件集合Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		98E8248D1C7FEC5400D95D6B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		98E8248F1C7FEC5400D95D6B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -245,12 +249,14 @@
 				98E8249F1C7FECFC00D95D6B /* View */,
 				98E8248D1C7FEC5400D95D6B /* AppDelegate.swift */,
 				98E8248F1C7FEC5400D95D6B /* ViewController.swift */,
+				98E2EDEE1C92A30E0075EA9A /* VC2.swift */,
 				98E824DB1C7FED6300D95D6B /* Header.swift */,
 				98E824911C7FEC5400D95D6B /* Main.storyboard */,
 				98E824941C7FEC5400D95D6B /* Assets.xcassets */,
 				98E824961C7FEC5400D95D6B /* LaunchScreen.storyboard */,
 				98E824991C7FEC5400D95D6B /* Info.plist */,
 				984323191C8531DF0016F3B5 /* PopUpView.swift */,
+				9849141D1C85B7D9007BDC72 /* BaseActionSheet.swift */,
 				9843231D1C8544250016F3B5 /* SexView.swift */,
 				984323231C854B210016F3B5 /* SexView.xib */,
 				9843231F1C85451A0016F3B5 /* ShareView.swift */,
@@ -498,12 +504,14 @@
 				98E824EE1C7FEE0F00D95D6B /* UITableViewCategory.swift in Sources */,
 				98E824CA1C7FECFC00D95D6B /* RoundButton.swift in Sources */,
 				98E824C71C7FECFC00D95D6B /* HH_HorizontalAlignButton.swift in Sources */,
+				9849141E1C85B7D9007BDC72 /* BaseActionSheet.swift in Sources */,
 				98E824CB1C7FECFC00D95D6B /* VerticalAlignButton.swift in Sources */,
 				98E824EC1C7FEE0F00D95D6B /* NSString+Utility.swift in Sources */,
 				98E824C91C7FECFC00D95D6B /* HorizontalAlignButton.swift in Sources */,
 				98E824ED1C7FEE0F00D95D6B /* UIColor+HexColor.swift in Sources */,
 				98E824D31C7FECFC00D95D6B /* BaseTF+CheckCode.swift in Sources */,
 				98E824CC1C7FECFC00D95D6B /* DrowDownListView.swift in Sources */,
+				98E2EDEF1C92A30E0075EA9A /* VC2.swift in Sources */,
 				9843231E1C8544250016F3B5 /* SexView.swift in Sources */,
 				98E824DA1C7FECFC00D95D6B /* UserInfoCellView.m in Sources */,
 				98E824F31C7FF09A00D95D6B /* BaseDashLineView.swift in Sources */,

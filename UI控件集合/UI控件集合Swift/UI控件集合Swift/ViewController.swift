@@ -17,11 +17,25 @@ class ViewController: UIViewController,PopUpViewDelegate {
     }
 
     @IBAction func showPup(sender: AnyObject) {
+        if ( a%2 == 0 ){
+
         let shareView:ShareView = ShareView.loadFromNib() as! ShareView
         shareView.backgroundColor = UIColor.lightGrayColor()
         PopUpView.sharedInstance.boxFrame = CGRectMake(0, 0, KScreenWidth, 100)
         let fixView = PopUpView.dealWithXibView(shareView, size: CGSizeMake(KScreenWidth, 140))
         PopUpView.showWithContentView(fixView, delegate: self)
+        }else{
+            let titleArr = ["男","女","取消"]
+            BaseActionSheet.showWithTitleArr(titleArr, view: self.view, callBack: {(index) -> Void in
+                print(titleArr[index])
+                switch titleArr[index] {
+                case titleArr[index]:
+                     break
+                default :
+                    break
+                }
+            })
+        }
     }
     var a:Int = 0
     @IBAction func show2(sender: AnyObject) {
