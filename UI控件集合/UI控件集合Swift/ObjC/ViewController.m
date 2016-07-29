@@ -10,19 +10,44 @@
 #import "KlineView.h"
 #import <AddressBook/AddressBook.h>
 #import <AddressBookUI/AddressBookUI.h>
+#import "CustomCycleview.h"
 @interface ViewController ()<ABPeoplePickerNavigationControllerDelegate>
 @property (weak, nonatomic) IBOutlet KlineView *lineView;
 
+@property (strong, nonatomic) CustomCycleview *cycView;
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self.lineView fetchData];
+    self.cycView =[[CustomCycleview alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, (self.view.frame.size.height)/2)];
+    [self.view addSubview:self.cycView];
+//    [self.lineView fetchData];
+    
+}
+- (void)viewDidAppear:(BOOL)animated{
+    [self initImagesView:YES];
 }
 
-- (void)viewDidAppear:(BOOL)animated
+#pragma mark 创建banner图试图
+-(void)initImagesView:(BOOL)isAutomatic{
+    
+    self.cycView.smallImg = NO;
+    [self.cycView setImageUrls:@[@{@"url":@"http://pic.pptbz.com/pptpic/201110/20111014111307895.jpg",@"title":@"1"},@{@"url":@"http://pic14.nipic.com/20110527/7011463_171952275366_2.jpg",@"title":@"2"}]];
+    [self.cycView setScrollingSpeed:5.0];
+    
+    if (isAutomatic) {
+        [self.cycView setIsAutoScrolling:true];
+        
+    }
+    else
+    {
+        [self.cycView setIsAutoScrolling:false];
+    }
+}
+
+- (void)viewDidAppear_:(BOOL)animated
 {
     ABAddressBookRef addressBook = NULL;
     __block BOOL accessGranted = NO;

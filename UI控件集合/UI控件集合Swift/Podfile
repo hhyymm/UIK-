@@ -1,0 +1,22 @@
+platform :ios, '8.0'
+
+target 'ObjC' do
+    
+    pod 'ReactiveCocoa', '~> 2.5'
+    pod 'ReactiveViewModel'
+    pod 'AFNetworking'
+    pod 'YYCategories'
+    
+    pod 'MGJRouter'
+    pod 'JLRoutes'
+    pod 'SDWebImage'
+    pod 'Masonry'
+#    pod 'SDCycleScrollView', :git => 'git@github.com:hirat/SDCycleScrollView.git'
+
+    pod 'UITableView+FDTemplateLayoutCell', '~> 1.4'
+    
+    pod 'UITextView+Placeholder', '~> 1.2.0'
+    
+    pod 'MXSegmentedPager', '~> 3.0.2'
+    
+end
