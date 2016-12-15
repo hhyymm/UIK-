@@ -18,7 +18,7 @@ class BaseTF_BottomLine:BaseTF {
             setNeedsDisplay()
         }
     }
-    @IBInspectable var lineColor:UIColor = UIColor.clearColor(){
+    @IBInspectable var lineColor:UIColor = UIColor.clear{
         didSet{
             setNeedsDisplay()
         }
@@ -34,7 +34,7 @@ class BaseTF_BottomLine:BaseTF {
     
     var label:UILabel!{
         get{
-            let label = self.valueForKeyPath("_placeholderLabel") as! UILabel
+            let label = self.value(forKeyPath: "_placeholderLabel") as! UILabel
             return label
         }
     }
@@ -51,10 +51,10 @@ class BaseTF_BottomLine:BaseTF {
         super.init(coder: aDecoder)
     }
     
-    override func drawRect(rect: CGRect) {
-        super.drawRect(rect)
+    override func draw(_ rect: CGRect) {
+        super.draw(rect)
         
-        let textRect = self.label.textRectForBounds(self.label.frame, limitedToNumberOfLines: 1)
+        let textRect = self.label.textRect(forBounds: self.label.frame, limitedToNumberOfLines: 1)
         
         let offset = self.label.bottom() - (self.label.height() - textRect.height)/2.0
         

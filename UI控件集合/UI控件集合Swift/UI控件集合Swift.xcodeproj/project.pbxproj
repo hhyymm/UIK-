@@ -73,6 +73,7 @@
 		98E824F51C802C1800D95D6B /* BaseSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E824F41C802C1800D95D6B /* BaseSwitch.swift */; };
 		98FA9D411C858FF600845259 /* DateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FA9D401C858FF600845259 /* DateView.swift */; };
 		98FA9D431C85900200845259 /* DateView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98FA9D421C85900200845259 /* DateView.xib */; };
+		E588DA821E026BA200C9E691 /* YMTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = E588DA811E026BA200C9E691 /* YMTextField.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -162,6 +163,8 @@
 		98FA9D401C858FF600845259 /* DateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateView.swift; sourceTree = "<group>"; };
 		98FA9D421C85900200845259 /* DateView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DateView.xib; sourceTree = "<group>"; };
 		E1768FB3BF0BC7232D7B9002 /* Pods-ObjC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ObjC/Pods-ObjC.debug.xcconfig"; sourceTree = "<group>"; };
+		E588DA801E026BA200C9E691 /* YMTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMTextField.h; sourceTree = "<group>"; };
+		E588DA811E026BA200C9E691 /* YMTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMTextField.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -249,6 +252,8 @@
 				989731EA1C818E4500C48929 /* BMPopView */,
 				989731ED1C818E4500C48929 /* FXBlurView */,
 				989731F01C818E4500C48929 /* KLine */,
+				E588DA801E026BA200C9E691 /* YMTextField.h */,
+				E588DA811E026BA200C9E691 /* YMTextField.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -499,6 +504,7 @@
 					98E824891C7FEC5400D95D6B = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = J8MTZP443C;
+						LastSwiftMigration = 0820;
 					};
 				};
 			};
@@ -608,6 +614,7 @@
 				984C181E1D4B42D3006FA669 /* MMProgressView.m in Sources */,
 				989731D91C818E0C00C48929 /* AppDelegate.m in Sources */,
 				989731F51C818E4500C48929 /* FXBlurView.m in Sources */,
+				E588DA821E026BA200C9E691 /* YMTextField.m in Sources */,
 				989731D61C818E0C00C48929 /* main.m in Sources */,
 				989731F71C818E4500C48929 /* KlineView.m in Sources */,
 				989731F41C818E4500C48929 /* BMPopView.m in Sources */,
@@ -827,6 +834,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.BlueMobi.UI----Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "139b1587-5f8e-480f-a4ff-ae105e0a0f51";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -841,6 +849,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.BlueMobi.UI----Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "139b1587-5f8e-480f-a4ff-ae105e0a0f51";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
